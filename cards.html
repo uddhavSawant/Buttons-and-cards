@@ -3,13 +3,16 @@
 <head>
     <title>Cards</title>
     <style>
+        .box{
+            width: 200px;
+            padding: 5px;
+            border: 1px solid;
+        }
         #box1
         {
             background-color: beige;
             color: brown;
-            width: 200px;
-            border: 1px solid rgb(0, 255, 230);
-            padding: 5px;
+            border-color: rgb(0, 255, 230);
         }
         h1
         {
@@ -38,15 +41,13 @@
         {
             background-color: #FEF9E1;
             color: #C14600;
-            width: 200px;
-            padding: 5px;
-            border: 1px solid #E5D0AC;
+            border-color: #E5D0AC;
         }
         #highlight1
         {
             background-color: #DEAA79;
         }
-        btn2{
+       #btn2{
             background-color: brown;
             color: bisque;
             border: none;
@@ -55,11 +56,15 @@
             margin-left: auto;
             margin-right: auto;
         }
-
+        #box3{
+            border-color: #B5828C;
+            background-color:#FFCDB2;
+            color:brown;
+        }
     </style>
 </head>
 <body>
-    <div id="box1">
+    <div class="box" id="box1">
         <img id="img" src="pics/controller.jpeg" width="100%">
         <h1>The Best Game Controller for Every Kind of Player</h1>
         <p>A great gamepad instantly levels up your play. These are our top picks for <span class="highlight">Switch, Xbox, PlayStation, and PC</span></p>
@@ -67,7 +72,7 @@
         <button id="btn">Buy now</button>
         utton id="btn">Buy now</button>
     </div><hr>
-    <div id="box2">
+    <div class="box" id="box2">
         <img src="pics/bat.jpeg" width="100%">
         <h1>A1 Bat</h1>
         <P>
@@ -75,6 +80,15 @@
         </P>
         <span id="price">₹ <del>4000/-</del> <b>1999/-</b> only</span><br>
         <button id="btn2">Buy now</button>
+    </div>
+    <hr>
+    <div class="box" id="box3">
+        <img src="pics/keyboard.jpg" width="100%">
+        <h1>Gaming keyboard</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sunt consequatur modi eligendi tempora aspernatur minus hic optio dolores inventore, magnam incidunt alias maxime temporibus, dicta et, veniam obcaecati illum!</p>
+        <span id="price">₹ <del>1500/-</del> <b>899/-</b> only</span><br>
+        <button id="btn2">Buy now</button>
+
     </div>
 </body>
 </html>
